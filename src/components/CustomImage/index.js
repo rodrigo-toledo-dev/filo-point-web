@@ -1,9 +1,24 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const CustomImage = styled.img`
+export const ContainerImage = styled.div`
+  display: flex;
+  flex: 1;
+  ${props => {
+    if (!props.avoidFullHeight) {
+      return css`
+        height: 80vh;
+      `;
+    }
+  }}
   justify-content: center;
-  align-self: center;
-  height: 160px;
+  align-items: center;
 `;
 
-export default CustomImage
+export const CustomImage = styled.img`
+  height: 130px;
+  width: 130px;
+  border-radius: 60px;
+  margin: 5px;
+  border: 5px solid #fff;
+  cursor: pointer;
+`;

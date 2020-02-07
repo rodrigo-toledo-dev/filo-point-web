@@ -1,6 +1,6 @@
 import React from 'react';
-import api from '../../services/api';
-import Main from '../Main';
+
+import Main from '~/pages/Main';
 
 const Body = () => (
   <>
@@ -9,5 +9,3 @@ const Body = () => (
 );
 
 export default Body;
-
-

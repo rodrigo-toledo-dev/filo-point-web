@@ -1,17 +1,15 @@
 import React from 'react';
 
-
-import MainHeader from './components/MainHeader';
-import Body from './screens/Body';
-
+import Header from '~components/MainHeader';
+import Body from '~pages/Body';
 
 import './styles.css';
 
 const App = () => (
   <div className="App">
-    <MainHeader />
+    <Header title="Filo Point" />
     <Body />
   </div>
-)
+);
 
 export default App;
